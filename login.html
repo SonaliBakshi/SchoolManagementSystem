@@ -1,0 +1,40 @@
+
+<html>
+<body background="C:\Users\Dell\Pictures\Screenshots\spo.jpg" text="blue">
+<center>
+<img src="C:\Users\Dell\Pictures\school.jpg" height="50" width="300">
+</center>
+<form name="myform" method="post" action="C:\Users\Dell\Documents\HTML\project\july.html" onsubmit="return validateform()">
+<center>
+<br><br>
+<b>Enter Name:</b><input type="text" id="name" name="name">&nbsp&nbsp  
+<b>Email id:&nbsp&nbsp  </b><input type="email" name="Email id" id="email"><br><br>
+<b>Password: </b><input type="password" value="" id="password"><br><br>
+<input type="submit" value="login">
+</center>
+</form>
+<script>
+function validateform()
+{
+var name = document.getElementById('name').value;
+var email = document.getElementById('email').value;
+var password = document.getElementById('password').value;
+if(name==''|| password=='' || email=='')
+{
+alert('All fields are required');
+return false;
+}
+else if(password.length<4)
+{
+alert('password must be more than 4 char');
+return false;
+}
+else
+{
+return true;
+}
+
+}
+</script>
+</body>
+</html

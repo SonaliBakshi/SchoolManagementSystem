@@ -1,0 +1,22 @@
+<html>
+    <body bgcolor="grey">
+      <h1 style="color:red">Arrange a call back</h1>
+        <form name="myform" method="post" action="C:\Users\Dell\Documents\HTML\project\submit.html" onsubmit="function1()">
+           Your Name   &nbsp&nbsp&nbsp<input type="text" name="name" id="demo1" required><br><br>
+           Your Email  &nbsp&nbsp&nbsp<input type="email" name="name" required><br><br>
+           Your Phone  &nbsp&nbsp&nbsp<input type="text" pattern="[6-9]{1}[0-9]{9}" title="Ivalid Phone No." class=form-control name="name" required><br><br>
+           Your Message<input type="text" name="name" id="mess" required><br><br>
+           <center><input type="submit" value="SUBMIT"></center>
+        </form>
+
+        <script>
+          function function1()
+          {
+          var name = document.getElementById('demo1').value;
+          var phone = document.getElementById('demo').value;
+          var message = document.getElementById('mess').value;
+          }
+        </script>
+        
+    </body>
+</html>
