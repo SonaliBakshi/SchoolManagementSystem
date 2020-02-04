@@ -16,23 +16,23 @@
     <script>
         function validateform()
         {
-        var name = document.getElementById('name').value;
-        var email = document.getElementById('email').value;
-        var password = document.getElementById('password').value;
-        if(name==''|| password=='' || email=='')
-        {
-          alert('All fields are required');
-          return false;
-        }
-        else if(password.length<4)
-        {
-          alert('password must be more than 4 char');
-          return false;
-        }
-        else
-        {
-          return true;
-        }
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            if(name==''|| password=='' || email=='')
+            {
+              alert('All fields are required');
+              return false;
+            }
+            else if(password.length<4)
+            {
+              alert('password must be more than 4 char');
+              return false;
+            }
+            else
+            {
+              return true;
+            }
         }
     </script>
    </body>
